@@ -6,34 +6,30 @@ body {
   text-align: center;
   color: #333;
   z-index: 4;
- 
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
-  
 }
 
 header {
- 
   display: flex;
   position: fixed;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 5%; /* استخدام نسبة مئوية للـ padding */
   width: 100%;
-  
+  box-sizing: border-box; /* لجعل العرض يشمل الـ padding */
+  z-index: 10000;
 }
 
 header .logo {
- 
   font-size: 24px;
   font-weight: bold;
-  margin: 0px 0px 0px 50px;
-
+  margin: 0;
 }
 
 header nav ul {
@@ -53,7 +49,7 @@ header nav ul li a {
 }
 
 .welcome-section {
-  padding: 100px 20px;
+  padding: 100px 5%; /* استخدام نسبة مئوية للـ padding */
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,99 +64,109 @@ h1 {
 }
 
 button {
-  
-  padding: 15px 30px;
-  font-size: 4em;
+  padding: 20px 40px;
+  font-size: 2em;
   color: white;
   background-color: #0a9396;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   background: linear-gradient(135deg, #00ffcc, #25bbfc);
- 
 }
 
 button:hover {
-
   background: linear-gradient(135deg, #2575fc, #6a11cb);
-  /* background: linear-gradient(135deg, #25bbfc, #00ffcc); */
+  transition: 0.5s;
 }
 
 .departments {
-  padding: 150px 20px;
-  background-color: #fff;
+  padding: 150px 5%; /* استخدام نسبة مئوية للـ padding */
+  background-color: #333;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-items: center;
- background-color: #333;
+  height: 80vh;
 }
 
-.department-buttons button {
-  padding: 10px 20px;
-  font-size: 1em;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cards {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.cards:hover {
+  height: 600px;
+}
+
+.cards button {
+  padding: 20px 150px; /* استخدام نسبة مئوية للـ padding */
+  font-size: 2em;
   color: white;
   background-color: #0a9396;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin: 10px;
- 
+  width: 90%; /* جعل العرض يتكيف مع الشاشة */
 }
 
-.department-buttons button:hover {
-  background-color: #94d2bd;
-  transition: all 0.5s ease;
+.dropdown-content {
+  font-size: 2em;
+  display: none;
+  position: absolute;
+  background: linear-gradient(450deg, #6a11cb 0%, #2575fc 70%);
+  min-width: 100%; /* جعل العرض يتكيف مع الشاشة */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px 0;
 }
 
-.cards {
-  overflow: hidden;
- display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  width: 500px;
-  height: 110px;
-  transition: 0.6s;
-  margin: 10px;
-  
-}
-.cards:hover{
-  height: 600px;
-  margin: 10px;
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: 0.5s;
 }
 
-.card {
-  background-color: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 150px;
-  text-align: center;
+.dropdown-content a:hover {
+  background-color: #555;
 }
-#label-welcome-section{
-  font-size: 50px;
+
+.cards:hover .dropdown-content {
+  display: block;
+}
+
+#label-welcome-section {
+  font-size: 2.5em; /* استخدام وحدات نسبية */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
-  width: 400px;
+  width: 90%; /* جعل العرض يتكيف مع الشاشة */
+  margin: 0 auto; /* توسيط النص */
 }
-.layoutCards{
-  margin: 10px;
-  width: 200px;
-}
-#labelFootar{
-  font-size: 50px;
+
+#labelFootar {
+  font-size: 2.5em; /* استخدام وحدات نسبية */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
-  width: 400px;
+  width: 90%; /* جعل العرض يتكيف مع الشاشة */
+  margin: 0 auto; /* توسيط النص */
 }
-#sectionFooter{
+
+#sectionFooter {
   background-color: #fff;
- 
+  padding: 50px 5%; /* استخدام نسبة مئوية للـ padding */
 }
-section{
+
+section {
   background: linear-gradient(450deg, #6a11cb 0%, #2575fc 100%);
   background-size: cover;
   background-position: center;
@@ -169,8 +175,118 @@ section{
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+/* Media Queries للتكيف مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
   }
- 
-  
 
+  header .logo {
+    margin-bottom: 10px;
+  }
 
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .welcome-section {
+    padding: 50px 5%;
+  }
+
+  .departments {
+    padding: 50px 5%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .cards button {
+    font-size: 1.5em;
+  }
+
+  #label-welcome-section, #labelFootar {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+  }
+
+  .cards button {
+    padding: 15px 20%;
+    font-size: 1.2em;
+  }
+
+  .dropdown-content {
+    font-size: 1.5em;
+  }
+
+  #label-welcome-section, #labelFootar {
+    font-size: 1.2em;
+  }
+}
+ /* Full-screen slider */
+ .slider {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Scroll down button */
+.scroll-down-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-down-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Content below the slider */
+.content {
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
