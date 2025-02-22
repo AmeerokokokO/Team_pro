@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+  background: linear-gradient(135deg, #115bcb, #25fcf1);
+  
+}
+header {
+ 
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 10000;
+
+}
+
+header .logo {
+ 
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px 0px 0px 50px;
+
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+.departments {
+  padding: 20px;
+ 
+}
+
+.department-buttons button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #0a9396;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+
+}
+
+.department-buttons button:hover {
+  background-color: #94d2bd;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  grid-template-columns: repeat(auto-fit ,minmax(200px,auto));
+  text-align: center;
+  margin-top:100px ;
+
+}
+.card:hover{
+transition: 0.5s;
+background-color: #00fbff;
+box-shadow: 2px 2px 10px 4px rgb(14 55 54 );
+transform: scale(1.1);
+
+
+
+} 

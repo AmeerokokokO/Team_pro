@@ -1,0 +1,293 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  text-align: center;
+  color: #333;
+  z-index: 4;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 5%; /* استخدام نسبة مئوية للـ padding */
+  width: 100%;
+  box-sizing: border-box; /* لجعل العرض يشمل الـ padding */
+  z-index: 10000;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.welcome-section {
+  padding: 100px 5%; /* استخدام نسبة مئوية للـ padding */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #005f73;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 2em;
+  color: white;
+  background-color: #0a9396;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00ffcc, #25bbfc);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transition: 0.5s;
+}
+
+.departments {
+  padding: 150px 5%; /* استخدام نسبة مئوية للـ padding */
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+  height: 80vh;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cards {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.cards:hover {
+  height: 600px;
+}
+
+.cards button {
+  padding: 20px 150px; /* استخدام نسبة مئوية للـ padding */
+  font-size: 2em;
+  color: white;
+  background-color: #0a9396;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  width: 90%; /* جعل العرض يتكيف مع الشاشة */
+}
+
+.dropdown-content {
+  font-size: 2em;
+  display: none;
+  position: absolute;
+  background: linear-gradient(450deg, #6a11cb 0%, #2575fc 70%);
+  min-width: 100%; /* جعل العرض يتكيف مع الشاشة */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.cards:hover .dropdown-content {
+  display: block;
+}
+
+#label-welcome-section {
+  font-size: 2.5em; /* استخدام وحدات نسبية */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  width: 90%; /* جعل العرض يتكيف مع الشاشة */
+  margin: 0 auto; /* توسيط النص */
+}
+
+#labelFootar {
+  font-size: 2.5em; /* استخدام وحدات نسبية */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  width: 90%; /* جعل العرض يتكيف مع الشاشة */
+  margin: 0 auto; /* توسيط النص */
+}
+
+#sectionFooter {
+  background-color: #fff;
+  padding: 50px 5%; /* استخدام نسبة مئوية للـ padding */
+}
+
+section {
+  background: linear-gradient(450deg, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Media Queries للتكيف مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header .logo {
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .welcome-section {
+    padding: 50px 5%;
+  }
+
+  .departments {
+    padding: 50px 5%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .cards button {
+    font-size: 1.5em;
+  }
+
+  #label-welcome-section, #labelFootar {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+  }
+
+  .cards button {
+    padding: 15px 20%;
+    font-size: 1.2em;
+  }
+
+  .dropdown-content {
+    font-size: 1.5em;
+  }
+
+  #label-welcome-section, #labelFootar {
+    font-size: 1.2em;
+  }
+}
+ /* Full-screen slider */
+ .slider {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Scroll down button */
+.scroll-down-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-down-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Content below the slider */
+.content {
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,176 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  text-align: center;
+  color: #333;
+  z-index: 4;
+ 
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+header {
+ 
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  
+}
+
+header .logo {
+ 
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px 0px 0px 50px;
+
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.welcome-section {
+  padding: 100px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #005f73;
+}
+
+button {
+  
+  padding: 15px 30px;
+  font-size: 4em;
+  color: white;
+  background-color: #0a9396;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00ffcc, #25bbfc);
+ 
+}
+
+button:hover {
+
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  /* background: linear-gradient(135deg, #25bbfc, #00ffcc); */
+}
+
+.departments {
+  padding: 150px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+ background-color: #333;
+}
+
+.department-buttons button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #0a9396;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+ 
+}
+
+.department-buttons button:hover {
+  background-color: #94d2bd;
+  transition: all 0.5s ease;
+}
+
+.cards {
+  overflow: hidden;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 500px;
+  height: 110px;
+  transition: 0.6s;
+  margin: 10px;
+  
+}
+.cards:hover{
+  height: 600px;
+  margin: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+#label-welcome-section{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  width: 400px;
+}
+.layoutCards{
+  margin: 10px;
+  width: 200px;
+}
+#labelFootar{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  width: 400px;
+}
+#sectionFooter{
+  background-color: #fff;
+ 
+}
+section{
+  background: linear-gradient(450deg, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  }
+ 
+  
+
+
