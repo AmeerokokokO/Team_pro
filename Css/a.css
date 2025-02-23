@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cairo', 'Changa', Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f2f5;
@@ -49,9 +49,9 @@ header nav ul li a {
 }
 
 .welcome-section {
+  font-family: 'Cairo', Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 100px 5%; /* استخدام نسبة مئوية للـ padding */
   background-color: #fff;
-  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100vh;
   background-color: aqua;
@@ -64,12 +64,14 @@ h1 {
 }
 
 button {
-  padding: 20px 40px;
-  font-size: 2em;
+  width: 150px;
+  margin-top: 100px;
+  padding: 10px 20px;
+  font-size: 1.5em;
   color: white;
   background-color: #0a9396;
   border: none;
-  border-radius: 25px;
+  border-radius: 10px;
   cursor: pointer;
   background: linear-gradient(135deg, #00ffcc, #25bbfc);
 }
@@ -82,7 +84,6 @@ button:hover {
 .departments {
   padding: 150px 5%; /* استخدام نسبة مئوية للـ padding */
   background-color: #333;
-  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-items: center;
   height: 80vh;
@@ -145,32 +146,37 @@ button:hover {
   display: block;
 }
 
-#label-welcome-section {
-  font-size: 2.5em; /* استخدام وحدات نسبية */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#label-welcome-section, #labelFootar {
+  font-family: 'Cairo', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8em; /* استخدام وحدات نسبية */
   font-style: italic;
   width: 90%; /* جعل العرض يتكيف مع الشاشة */
   margin: 0 auto; /* توسيط النص */
-}
-
-#labelFootar {
-  font-size: 2.5em; /* استخدام وحدات نسبية */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  width: 90%; /* جعل العرض يتكيف مع الشاشة */
-  margin: 0 auto; /* توسيط النص */
+  
 }
 
 #sectionFooter {
   background-color: #fff;
+  
   padding: 50px 5%; /* استخدام نسبة مئوية للـ padding */
+}
+
+footer {
+  background:black;
+  height: 100px;
+}
+footer h3 {
+  margin: 0;
+  background:black;
+  color: white;
+  padding: 10px 0;
+  
 }
 
 section {
   background: linear-gradient(450deg, #6a11cb 0%, #2575fc 100%);
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
   color: #fff;
   text-align: center;
   position: relative;
@@ -247,6 +253,7 @@ section {
   height: 100vh; /* Full viewport height */
   overflow: hidden;
   position: relative;
+  margin-top: 0px; /* Adjust this value based on the height of your header */
 }
 
 /* Slides container */
@@ -296,6 +303,7 @@ section {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  margin-top: 0%; /* Adjust this value based on the height of your header */
 }
 
 .slides {

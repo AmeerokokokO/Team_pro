@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <!-- خط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <!-- خط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa:wght@200..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/Css/a.css">
 </head>
+
 <body>
   <header>
     <nav>
         <ul>
-            <li><a href="#Wlcome">Home</a></li>
-            <li><a href="#Departments">lectures</a></li>
-            <li><a href="#sectionFooter">About As</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a href="#Wlcome">Sign in</a></li>
+            <li><a href="#Departments">About As</a></li>
+            <li><a href="#sectionFooter">Department</a></li>
+            <li><a href="#">Home</a></li>
         </ul>
     </nav>
-    <div class="logo">LOGO</div>
+    <div class="logo">TUTORLY</div>
+
   </header>
   
   <section>
     <!-- Full-screen slider -->
     <div class="slider">
       <div class="slides">
-          <div class="slide active" style="background-image: url('/Img/image1.jpg');"></div>
-          <div class="slide" style="background-image: url('/Img/image2.jpg');"></div>
-          <div class="slide" style="background-image: url('/Img/image3.jpg');"></div>
-          <div class="slide" style="background-image: url('/Img/image4.jpg');"></div>
+          <div class="slide active" style="background-image: url('/Img/img1_slider.jpg');"></div>
+          <div class="slide" style="background-image: url('/Img/img2_slider.jpg');"></div>
+          <div class="slide" style="background-image: url('/Img/img3_slider.jpg');"></div>
+          <div class="slide" style="background-image: url('/Img/img4_slider.jpg');"></div>
       </div>
       <!-- Button to scroll down -->
       <button class="scroll-down-btn">Continue</button>
@@ -35,10 +46,16 @@
 
   <main>
     <section class="welcome-section" id="Wlcome">
-      <a href="#"><button id="startButton">Start</button></a>
       <div>
-        <label id="label-welcome-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nulla doloremque deleniti aperiam illum delectus consequatur! Iusto vitae eius inventore dolore libero, hic odit consequatur rem. Nemo deleniti possimus minus?</label>
+        <label id="label-welcome-section"> 
+          مرحبًا بكم في منصتنا التعليمية الذكية، حيث يلتقي العلم بالتكنولوجيا لتقديم تجربة تعلمية فريدة ومبتكرة!
+           نحن هنا لنساعدكم على استيعاب المحتوى التعليمي بسهولة وسرعة، من خلال استخدام أحدث تقنيات الذكاء الصناعي 
+           التي تلخص المحاضرات الطويلة وتقدمها لكم بشكل مركز وسهل الفهم.معنا
+          لن تضيعوا في التفاصيل، بل ستتمكنون من التركيز على ما هو مهم حقًا.
+          انطلقوا في رحلة التعلم معنا، حيث يصبح الوصول إلى المعلومة أسرع، وأذكى، وأكثر فعالية!
+        </label>
       </div>
+      <a href="#"><button id="startButton">Lets Start</button></a>
     </section>
   </main>
 
@@ -75,11 +92,17 @@
   </section>
 
   <section id="sectionFooter">
-    <footer>
-      <label id="labelFootar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi temporibus numquam, blanditiis quod inventore quae perspiciatis ducimus deleniti fuga modi corrupti dignissimos nesciunt. Voluptate totam, voluptatem possimus eaque nemo corrupti eligendi debitis ea, similique, aperiam ipsa quaerat amet optio numquam magnam exercitationem suscipit aspernatur nostrum labore. Repellat, molestiae quidem veritatis deleniti est, illum omnis natus ex vel ea commodi sit porro nobis, quas corporis quo soluta praesentium voluptas. Possimus aspernatur dolores repudiandae ipsa dolorum ad optio accusamus esse debitis necessitatibus? Sapiente, qui voluptatum distinctio reiciendis minima cumque. Maxime illum mollitia ipsa voluptates quaerat odit voluptas quas sunt, quidem minus labore?</label>
-      <h1>2025&copy; Ameer </h1>
-    </footer>
+      <label id="labelFootar">
+      نبذة عن الموقع 
+نحن فريق من الطلاب الذين يؤمنون بقوة التعلم والتكنولوجيا، ونسعى دائمًا لتسهيل الحياة الدراسية لزملائنا. من هذا المنطلق، قمنا بتطوير هذا الموقع التعليمي باستخدام تقنيات الذكاء الصناعي لتلخيص المحاضرات بشكل سريع ودقيق، مما يساعد الطلاب على فهم المواد الدراسية بسهولة وتوفير الوقت والجهد
+هدفنا هو جعل العملية التعليمية أكثر فعالية وإنتاجية، ومساعدة الطلاب على التركيز على ما يهمهم حقًا. نفتخر بأننا جزء من مجتمع جامعي يدعم بعضه، ونأمل أن يكون هذا الموقع خطوة نحو مستقبل تعليمي أكثر ذكاءً وتفاعلية
+معًا، نصنع الفرق!
+      </label>
   </section>
+
+  <footer>
+    <h3>2025&copy; All Right Reserved</h3>
+  </footer>
 
   <script src="/Js/a.js"></script>
 </body>
