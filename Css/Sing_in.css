@@ -1,7 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+*{
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
+}
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #115bcb, #25fcf1);
+  
+  
+  background: linear-gradient(54deg, #2575fc, #212567);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,50 +20,62 @@ body {
 }
 
 .login-container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  width: 350px;
-  text-align: center;
+  width: 250px;
+  justify-content: center;
+  align-content: center;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
-
 .login-header h2 {
+
   margin-bottom: 10px;
-  color: #333;
+  color: #0d78c5;
   font-size: 24px;
+  font-weight: normal;
+  text-align: center;
 }
 
 .login-header p {
-
   color: #666;
   font-size: 14px;
   margin-bottom: 20px;
+  color: #0040ff;
+  text-align: center;
+
 }
 
 .input-group {
   position: relative;
   margin-bottom: 20px;
   text-align: right;
+  justify-content: center;
+  align-content: center;
+ 
 }
 
 .input-group input {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  width: 250px;
+  padding: 4px;
+  border: 2px solid #0040ff;
+  border-radius: 30px;
+
   box-sizing: border-box;
   font-size: 14px;
   outline: none;
+ 
   transition: border-color 0.3s ease;
+
 }
 
 .input-group input:focus {
   border-color: #6a11cb;
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+  border-radius: 30px;
 }
 
 .input-group label {
@@ -73,17 +94,17 @@ body {
   top: 0;
   right: 8px;
   font-size: 12px;
-  color: #6a11cb;
-  background-color: #fff;
+  color: #0040ff;
+  background-color: #ffffff;
   padding: 0 5px;
 }
 
 button {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(135deg, #00ffcc, #25bbfc);
+  width: 130px;
+  
+  background:linear-gradient(79deg, #2575fc, #212567);
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -91,7 +112,9 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  background: linear-gradient(135deg, #212567 ,#2575fc);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .error-message {
@@ -115,4 +138,33 @@ button:hover {
 
 .login-footer a:hover {
   text-decoration: underline;
+}
+
+/* إضافة روابط إضافية */
+.additional-links {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.additional-links a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.additional-links a:hover {
+  text-decoration: underline;
+}
+#loginForm{
+  justify-content: center;
+  align-content: center;
+}
+.divBtn{
+/* display: flex; */
+width: 100%;
+ justify-items: center;
+}
+.divBtn p{
+  color: #0040ff;
 }

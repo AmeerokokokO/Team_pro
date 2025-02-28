@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تسجيل الدخول</title>
-    <link rel="stylesheet" href="Sing_in.css">
+    <link rel="stylesheet" href="/Css/Sing_in.css">
+   
 </head>
 <body>
     <div class="login-container">
         <div class="login-header">
-            <h2>مرحباً بعودتك!</h2>
+            <h2>تسجيل الدخول</h2>
             <p>سجل الدخول للوصول إلى حسابك</p>
         </div>
         <form id="loginForm">
@@ -21,12 +22,15 @@
                 <input type="password" id="password" name="password" required>
                 <label for="password">كلمة المرور</label>
             </div>
-            <button type="submit">دخول</button>
+            
+          <div class="divBtn"> <button type="submit">التسجيل</button>
+            <p>هل نسيت الرمز ؟ اضغط هنا</p>
+          </div>
+           
         </form>
         <p id="error-message" class="error-message"></p>
        
-    </div>
 
-    <script src="start.js"></script>
+    <script src="/Js/start.js"></script>
 </body>
 </html>
