@@ -1,0 +1,362 @@
+* {
+  font-family: 'Cairo', 'Changa', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #3A75E2, #20407C);
+    color: #fff;
+    padding: 10px 5%; /* استخدام نسبة مئوية للـ padding */
+    width: 100%;
+    box-sizing: border-box; /* لجعل العرض يشمل الـ padding */
+    z-index: 10000;
+  }
+
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  header nav ul {
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .log-in {
+    border: 2px solid #3A75E2;
+    border-radius: 30px;
+    padding: 2px 20px;
+  }
+
+  .log-in a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-shadow:0px 10px 10px #000000;
+    transition: 0.5s;
+    color: #000000;
+  }
+
+  /* slider */
+
+   /* Full-screen slider */
+ .slider {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    position: relative;
+    margin-top: 0px; /* Adjust this value based on the height of your header */
+  }
+  
+  /* Slides container */
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Individual slide */
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Scroll down button */
+  .scroll-down-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .scroll-down-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Content below the slider */
+  .content {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0%; /* Adjust this value based on the height of your header */
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /*  لماذا تستخدم موقعنا  */
+  .line {
+    width: 50%; /* عرض الخط */
+    height: 3px; /* سمك الخط */
+    background-color: #3A75E2; /* لون الخط */
+    background-image: linear-gradient(left, #3A75E2, #20407C); /* تدرج اللون */
+    border: none; /* إزالة الحدود الافتراضية */
+    margin: 50px auto; /* توسيط الخط */
+  }
+
+  .text-lable {
+    font-size: 40px;
+    color: #3A75E2;
+    display: flex;
+    justify-content: center;
+    margin: auto;    
+  }
+
+.card-contaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* عدم السماح بتغليف الكاردات */
+    padding: 60px;
+    }
+
+.card {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #20407C 0%, #3A75E2 74%);
+    margin: auto; /* توسيط العنصر */
+    padding: 50px 60px;
+    border-radius: 40px;
+    width: 300px; /* تحديد عرض ثابت */
+    height: 400px; /* تحديد ارتفاع ثابت */
+    box-sizing: border-box; /* لضمان أن البادينغ لا يؤثر على الحجم الكلي */
+transition: transform 0.9s; /* إضافة انتقال للتحويم */
+}
+
+.card:hover {
+  transform: scale(1.1); /* تكبير العنصر عند التحويم */
+}
+
+.card h2 {
+    margin-bottom: 50px; /* تعديل الهامش السفلي */
+    font-size: 24px; /* تعديل حجم الخط */
+    text-align: center;
+    font-size: 30px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* الاقسام */
+
+.departments {
+    margin-top: 80px;
+}
+
+.section {
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #20407C 0%, #3A75E2 74%);
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.section:nth-child(1) {
+    height: 300px;
+    background-image: linear-gradient(to bottom, #20407C 0%, #3A75E2 74%);
+    top: 120px;
+}
+
+.section:nth-child(2) {
+    height: 300px; /* زيادة ارتفاع القسم الثاني */
+    background-image: linear-gradient(to bottom, #20407C 0%, #3A75E2 74%);
+    top: 120px; /* تعديل الموضع بناءً على ارتفاع القسم الأول */
+}
+
+.section:nth-child(3) {
+    height: 300px; /* زيادة ارتفاع القسم الثالث */
+    background-image: linear-gradient(to bottom, #20407C 0%, #3A75E2 74%);
+    top: 120px; /* تعديل الموضع بناءً على ارتفاع القسمين الأول والثاني */
+}
+
+
+
+.section a {
+    margin: 10px; /* إضافة هامش بين عناصر القائمة */
+}
+
+.section a {
+    padding: 20px;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 15px;
+    display: inline;
+    text-align: center; /* توسيط النص داخل الروابط */
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-section h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.sub-section h4 {
+    color: #fff;
+    font-size: 25px;
+}
+.temp {
+    display: flex;
+    
+}
+
+/* تعليقات بعض طلابنا  */
+
+.card-contaner-comment {
+  display: flex;
+  justify-content: center; /* محاذاة الكاردات إلى المنتصف */
+  align-items: center;
+  flex-wrap: wrap; /* السماح بتغليف الكاردات */
+  padding: 60px;
+  }
+
+.comment-card {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* محاذاة المحتوى إلى الأعلى */
+  align-items: flex-start; /* محاذاة المحتوى إلى اليسار */
+  background-image: linear-gradient(to bottom, #20407C 0%, #3A75E2 74%);
+  margin: 10px; /* إضافة هامش بين الكاردات */
+  padding: 20px;
+  border-radius: 40px;
+  width: 30%; /* تحديد عرض مناسب للكاردات */
+  height: 200px; /* تحديد ارتفاع ثابت */
+  box-sizing: border-box; /* لضمان أن البادينغ لا يؤثر على الحجم الكلي */
+position: relative; /* لجعل الدائرة البيضاء في الزاوية */
+  transition: transform 0.9s; /* إضافة انتقال للتحويم */
+}
+
+.comment-card:hover {
+  transform: scale(1.1); /* تكبير العنصر عند التحويم */
+}
+
+.comment-card h2 {
+  margin-bottom: 10px; /* تعديل الهامش السفلي */
+  font-size: 18px; /* تصغير حجم الخط */
+  text-align: left; /* محاذاة النص إلى اليسار */
+}
+
+.comment-card p {
+  text-align: left; /* محاذاة النص إلى اليسار */
+  font-size: 14px; /* تعديل حجم الخط */
+}
+
+/* إضافة دائرة بيضاء في الزاوية اليسرى العلوية للكارد */
+.comment-card::before {
+  content: "";
+  position: absolute;
+  top: 10px; /* تعديل الموضع ليكون بعيداً قليلاً عن الزاوية */
+  left: 10px; /* تعديل الموضع ليكون بعيداً قليلاً عن الزاوية */
+  width: 60px; /* تكبير الدائرة قليلاً */
+  height: 60px; /* تكبير الدائرة قليلاً */
+  background-color: #fff;
+  border-radius: 50%;
+}
+/* من نحن  */
+
+.about-us {
+  display: flex;
+  justify-content: center; /* توسيط العناصر أفقياً */
+  align-items: center; /* توسيط العناصر عمودياً */
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  flex-wrap: wrap;
+  padding: 60px;
+text-align: center; /* توسيط النص */
+}
+
+.about-us p {
+  font-size: 25px; /* تكبير حجم الخط */
+  color: #3A75E2; /* لون النص */
+  margin-bottom: 20px; /* إضافة هامش سفلي */
+  }
+
+  /* footer  */
+
+  footer {
+    background: linear-gradient(to left, #3A75E2, #20407C);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* جعل الفوتر في نهاية الصفحة */
+    width: 100%; /* ملء العرض بالكامل */
+    bottom: 0; /* تثبيت الفوتر في أسفل الصفحة */
+  }
