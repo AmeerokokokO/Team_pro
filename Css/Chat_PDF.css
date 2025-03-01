@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+body {
+  
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.sidebar {
+ 
+  background: linear-gradient(to bottom, #1a237e, #1976d2);
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: -210px; /* يبدأ السلايدر مخفي من الجهة اليمنى */
+  top: 0;
+  transition: right 0.3s ease; /* تأثير الانتقال عند التحريك */
+  
+}
+.sidebar:hover {
+transition: 0.8s;
+  right: 0; /* يظهر السلايدر عند تمرير الماوس */
+}
+.menu-button {
+  font-family: 'Cairo', 'Changa', Geneva, Verdana, sans-serif;
+  display: block;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 3px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 90%;
+}
+.menu-button:hover {
+box-shadow: 10px 10px 10px black ;
+transform: scale(1.1);
+transition: 0.5s ;
+  background: white;
+  color: #1a237e;
+}
+.content {
+overflow: hidden;
+  flex: 1;
+  font-size: 80px;
+  color: #1a237e;
+}
+.ai-button {
+  background: #1976d2;  background: linear-gradient(to bottom, #1a237e, #1976d2);
+  color: white;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: bold;
+}
+
+.container {
+
+display: flex;
+height: 100vh;
+width: 40%;
+
+}
+
+.pdf-viewer {
+flex: 1;
+border-right: 2px solid #ccc;
+}
+
+.chatbot {
+flex: 1;
+display: flex;
+flex-direction: column;
+padding: 10px;
+background-color: #f9f9f9;
+}
+
+#chat-window {
+flex: 1;
+border-radius: 10px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+padding: 10px;
+overflow-y: auto;
+background-color: #fff;
+}
+
+#chat-input {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+#send-btn {
+padding: 10px;
+background: linear-gradient(70deg, #1a237e, #1976d2);
+
+
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#send-btn:hover {
+background-color: #0056b3;
+transform: scale(1.01);
+transition: 0.8s;
+}
