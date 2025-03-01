@@ -23,14 +23,14 @@ body {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  right: -210px; /* يبدأ السلايدر مخفي من الجهة اليمنى */
+  right: -210px;
   top: 0;
-  transition: right 0.3s ease; /* تأثير الانتقال عند التحريك */
+  transition: right 0.3s ease; 
   
 }
 .sidebar:hover {
 transition: 0.8s;
-  right: 0; /* يظهر السلايدر عند تمرير الماوس */
+  right: 0;
 }
 .menu-button {
   font-family: 'Cairo', 'Changa', Geneva, Verdana, sans-serif;
